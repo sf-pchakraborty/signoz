@@ -45,7 +45,7 @@ function Metrics({ getService }: MetricsProps): JSX.Element {
 	const isSkipped = getLocalStorageKey(SKIP_ONBOARDING) === 'true';
 
 	useEffect(() => {
-		if (loading === false) {
+		if (!loading) {
 			getService({
 				maxTime,
 				minTime,

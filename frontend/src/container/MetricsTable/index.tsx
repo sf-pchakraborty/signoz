@@ -39,7 +39,8 @@ function Metrics(): JSX.Element {
 
 	const columns: ColumnsType<DataProps> = [
 		{
-			title: 'Application',
+			// title: 'Application',
+			title: 'Services',
 			dataIndex: 'serviceName',
 			key: 'serviceName',
 			render: (text: string): JSX.Element => (
